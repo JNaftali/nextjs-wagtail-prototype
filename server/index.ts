@@ -19,7 +19,7 @@ app.prepare().then(() => {
     }
 
     const pagesResponse = await fetch(
-      'https://api-dev.devatech.us/api/v2/pages/?site=2',
+      'https://api-dev.devatech.us/api/v2/pages/?site=2&limit=500',
     );
     const pages = await pagesResponse.json();
 
