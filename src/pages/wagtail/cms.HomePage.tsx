@@ -1,10 +1,12 @@
 import fetch from 'node-fetch';
 import { GetServerSideProps } from 'next';
+import { NavOrSomething } from 'src/components/NavOrSomething';
 
 const HomePage = (props: unknown) => {
   return (
     <div>
       home hi
+      <NavOrSomething />
       <pre>
         <code>{JSON.stringify(props, null, 2)}</code>
       </pre>
